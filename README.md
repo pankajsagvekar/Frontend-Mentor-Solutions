@@ -1,3 +1,3 @@
-# Blog_Preview_Card
+# Soultion Of Frontend Mentor Challanges
 
-The Live Site Link: <a href = "">Site</a>
+Bolg Preview Card: <a href = "">Site</a>
