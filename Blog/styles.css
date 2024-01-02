@@ -1,0 +1,77 @@
+body{
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+}
+
+.card .learn{
+    font-weight: 800;
+    background-color: hsl(47, 88%, 63%);
+    width: max-content;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: .7rem;
+}
+
+.found a{
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+}
+
+.found:hover a{
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card .date{
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.card .para{
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.card{
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    width: 55ch; /* Game Changer tell how many chracters should be there in a line max*/
+    height: max-content;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    font-size: 0.7rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    box-shadow: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.author img{
+    width: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.author {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author h4{
+    font-weight: 800;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
