@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/Outfit-VariableFont_wght.ttf);
+} 
+
+:root{
+    --gray: hsl(220, 15%, 55%);
+    --lightblue: hsl(212, 45%, 89%);
+    --darkblue: hsl(218, 44%, 22%);
+    --white: hsl(0, 0%, 100%);
+    --shadow: 0rem 0rem 5rem 0rem rgba(0,0,0,.2);
+}
+
+body{
+    background-color: var(--lightblue);
+    font-family: Outfit;
+}
+
+.card img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.card h2{
+    font-weight: 700;
+    color: var(--darkblue);
+}
+
+.card p{
+    font-weight: 400;
+    color: var(--gray);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--white);
+    padding: 1rem;
+    width: 30ch;
+    box-shadow: var(--shadow);
+
+    border-radius: 1rem;
+}
+
+.container{
+    display: flex;
+    place-content: center;
+    display: grid;
+    height: 100vh;
+}
