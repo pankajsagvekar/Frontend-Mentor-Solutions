@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Youngserif";
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root{
+    --brown: hsl(14, 45%, 36%);
+    --raspberry: hsl(332, 51%, 32%);
+
+    --white: hsl(0, 0%, 100%);
+    --rosewhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightgrey: hsl(30, 18%, 87%);
+    --wengebrown: hsl(30, 10%, 34%);
+    --charcoal: hsl(24, 5%, 18%);
+}
+
+body{
+    background-color: var(--eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 730px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.recipe{
+    padding: 2.5rem;
+    border-radius: 1.3rem;
+    background-color: white;
+}
+
+.contents{
+    padding: 0rem 0rem;
+    border-radius: 1.3rem;
+    background-color: white;
+    list-style-position: inside;
+}
+
+.fimage{
+    width: 100%;
+    height: 100%;
+
+    border-radius: .7rem;
+}
+
+.title{
+    margin: 1rem 0rem;
+    text-align: left;
+}
+
+.title h2{
+    font-family: Youngserif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.prepare{
+    background-color: var(--rosewhite);
+    padding: 1.5rem;
+    border-radius: .6rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+hr{
+    display: block;
+    border: 0;
+    border-top: .1rem solid #ddd;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h4{
+    font-size: 1.2rem;
+    color: var(--raspberry);
+}
+
+h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: Youngserif;
+    color: var(--brown);
+}
+
+p{
+    color: var(--wengebrown);
+}
+
+span{
+    font-weight: 700;
+}
+
+li{
+    color: var(--wengebrown);
+    margin-top: 1rem;
+}
+
+ol{
+    counter-reset: item;
+    list-style-type: none;
+}
+
+ol li{
+    display: flex;
+    counter-increment: item;
+}
+
+ol li::before{
+    content: counter(item) ". ";
+    margin-right: 1rem;
+    color: var(--brown);
+    font-weight: 700;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--wengebrown);
+}
+
+tr{
+    border-bottom: .1rem solid #ddd;
+}
+
+.no-border{
+    border-bottom: none;
+}
+
+td{
+    padding: 1rem;
+}
+
+.table-num{
+    color: var(--brown);
+}
+
+@media screen and (max-width: 375px){
+    .card{
+        width: 100%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .recipe{
+        border-radius: 0rem;
+    }
+    .fimage{
+        width: 100%;
+        height: 100%;
+    
+        border-radius: 0rem;
+    }
+    .recipe{
+        padding: 0;
+    }
+
+    .contents{
+        padding: 1.3rem;
+    }
+
+}
