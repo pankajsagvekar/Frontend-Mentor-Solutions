@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family: redHat;
+}
+
+@font-face {
+    font-family: redHat;
+    src: url(fonts/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+:root{
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%); 
+    --veryPale: hsl(225, 100%, 98%);
+    --veryPale2: hsl(245, 75%, 92%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --dBlue: hsl(224, 23%, 55%);
+}
+
+body{
+    background-image: url(img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: var(--paleBlue);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    text-align: center;
+
+    background-color: white;
+    box-shadow: 0rem 1rem 1rem 0rem var(--paleBlue);
+}
+.card img{
+    width: 400px;
+}
+
+.card h1{
+    color: var(--darkBlue);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.card p{
+    color: var(--dBlue);
+}
+
+.card-body{
+    padding: 2rem 2.5rem;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+
+    background-color: var(--veryPale);
+}
+
+.plan-left{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.plan-left p{
+    color: var(--darkBlue);
+}
+
+.price{
+    font-weight: 500;
+    color: var(--dBlue);
+}
+
+.plan .plan-left img{
+    margin-right: 1.2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.plan .plan-right a{
+    font-weight: 800;
+    font-size: .8rem;
+}
+
+.btn{
+    width: 100%;
+    height: 2.8rem;
+    border: 0;
+    outline: 0;
+    font-size: .9rem;
+
+    border-radius: .7rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.btn-blue{
+    background-color: var(--brightBlue);
+    color: white;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: box-shadow .2s;
+}
+
+.btn-white{
+    background-color: white;
+    color: var(--dBlue);
+    font-weight: 900;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-blue:hover{
+    box-shadow: 0rem .5rem 1rem 0rem var(--veryPale2);
+}
